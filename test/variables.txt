@@ -1,0 +1,12 @@
+*** Variables ***
+${UserNameTextBox}    id=mailbox__login
+${PasswordTextBox}    id=mailbox__password
+${LoginButton}    id=mailbox__auth__button
+${Delay}          5s
+${DashboardTitle}    (3) Входящие - Почта Mail.Ru
+${SiteUrl}        http://mail.ru
+${Browser}        Chrome
+${Password}       Finaltest1!
+${Username}       testmeh
+${WriteMessageButton}    xpath=//div[2]/div/a/span
+${SELENIUM_HUB_URL}     http://10.13.0.133:4444/wd/hub

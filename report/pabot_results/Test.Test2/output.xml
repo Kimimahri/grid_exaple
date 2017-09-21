@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170921 13:57:02.909" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/remaru/PycharmProjects/grid/test" id="s1" name="Test">
+<suite source="/home/remaru/PycharmProjects/grid/test/test2.robot" id="s1-s1" name="Test2">
+<test id="s1-s1-t1" name="LoginTest">
+<kw name="Open Browser to the Login Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<arg>remote_url=${SELENIUM_HUB_URL}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:02.976" level="INFO">Opening browser 'Chrome' to base url 'http://mail.ru' through remote server at 'http://10.13.0.133:4444/wd/hub'</msg>
+<status status="PASS" endtime="20170921 13:57:19.779" starttime="20170921 13:57:02.975"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170921 13:57:19.900" starttime="20170921 13:57:19.779"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:19.900" starttime="20170921 13:57:02.975"></status>
+</kw>
+<kw name="Enter User Name">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameTextBox}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:19.901" level="INFO">Typing text 'testmeh' into text field 'id=mailbox__login'</msg>
+<status status="PASS" endtime="20170921 13:57:20.146" starttime="20170921 13:57:19.901"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:20.146" starttime="20170921 13:57:19.900"></status>
+</kw>
+<kw name="Enter Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordTextBox}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:20.147" level="INFO">Typing text 'Finaltest1!' into text field 'id=mailbox__password'</msg>
+<status status="PASS" endtime="20170921 13:57:20.342" starttime="20170921 13:57:20.147"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:20.343" starttime="20170921 13:57:20.147"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:20.343" level="INFO">Clicking button 'id=mailbox__auth__button'.</msg>
+<status status="PASS" endtime="20170921 13:57:20.462" starttime="20170921 13:57:20.343"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:20.462" starttime="20170921 13:57:20.343"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:25.464" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170921 13:57:25.464" starttime="20170921 13:57:20.462"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170921 13:57:25.537" starttime="20170921 13:57:25.465"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:25.537" critical="yes" starttime="20170921 13:57:02.975"></status>
+</test>
+<test id="s1-s1-t2" name="LoginAgain">
+<kw name="Open Browser to the Login Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<arg>remote_url=${SELENIUM_HUB_URL}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:25.539" level="INFO">Opening browser 'Chrome' to base url 'http://mail.ru' through remote server at 'http://10.13.0.133:4444/wd/hub'</msg>
+<status status="PASS" endtime="20170921 13:57:34.897" starttime="20170921 13:57:25.538"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170921 13:57:35.015" starttime="20170921 13:57:34.897"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:35.015" starttime="20170921 13:57:25.538"></status>
+</kw>
+<kw name="Enter User Name">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameTextBox}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:35.016" level="INFO">Typing text 'testmeh' into text field 'id=mailbox__login'</msg>
+<status status="PASS" endtime="20170921 13:57:35.163" starttime="20170921 13:57:35.016"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:35.164" starttime="20170921 13:57:35.016"></status>
+</kw>
+<kw name="Enter Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordTextBox}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:35.166" level="INFO">Typing text 'Finaltest1!' into text field 'id=mailbox__password'</msg>
+<status status="PASS" endtime="20170921 13:57:35.323" starttime="20170921 13:57:35.165"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:35.323" starttime="20170921 13:57:35.164"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:35.324" level="INFO">Clicking button 'id=mailbox__auth__button'.</msg>
+<status status="PASS" endtime="20170921 13:57:35.423" starttime="20170921 13:57:35.324"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:35.423" starttime="20170921 13:57:35.323"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:40.424" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170921 13:57:40.425" starttime="20170921 13:57:35.423"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170921 13:57:40.515" starttime="20170921 13:57:40.427"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:40.516" critical="yes" starttime="20170921 13:57:25.537"></status>
+</test>
+<test id="s1-s1-t3" name="AndAgain">
+<kw name="Open Browser to the Login Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<arg>remote_url=${SELENIUM_HUB_URL}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:40.519" level="INFO">Opening browser 'Chrome' to base url 'http://mail.ru' through remote server at 'http://10.13.0.133:4444/wd/hub'</msg>
+<status status="PASS" endtime="20170921 13:57:45.239" starttime="20170921 13:57:40.519"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170921 13:57:45.350" starttime="20170921 13:57:45.239"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:45.350" starttime="20170921 13:57:40.518"></status>
+</kw>
+<kw name="Enter User Name">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameTextBox}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:45.352" level="INFO">Typing text 'testmeh' into text field 'id=mailbox__login'</msg>
+<status status="PASS" endtime="20170921 13:57:45.575" starttime="20170921 13:57:45.352"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:45.575" starttime="20170921 13:57:45.350"></status>
+</kw>
+<kw name="Enter Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordTextBox}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:45.576" level="INFO">Typing text 'Finaltest1!' into text field 'id=mailbox__password'</msg>
+<status status="PASS" endtime="20170921 13:57:45.725" starttime="20170921 13:57:45.575"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:45.725" starttime="20170921 13:57:45.575"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:45.725" level="INFO">Clicking button 'id=mailbox__auth__button'.</msg>
+<status status="PASS" endtime="20170921 13:57:45.843" starttime="20170921 13:57:45.725"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:45.844" starttime="20170921 13:57:45.725"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:50.846" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170921 13:57:50.847" starttime="20170921 13:57:45.845"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170921 13:57:50.932" starttime="20170921 13:57:50.847"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:50.932" critical="yes" starttime="20170921 13:57:40.517"></status>
+</test>
+<test id="s1-s1-t4" name="AndAgainAgain">
+<kw name="Open Browser to the Login Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<arg>remote_url=${SELENIUM_HUB_URL}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:50.939" level="INFO">Opening browser 'Chrome' to base url 'http://mail.ru' through remote server at 'http://10.13.0.133:4444/wd/hub'</msg>
+<status status="PASS" endtime="20170921 13:57:54.475" starttime="20170921 13:57:50.937"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170921 13:57:54.590" starttime="20170921 13:57:54.475"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:54.590" starttime="20170921 13:57:50.936"></status>
+</kw>
+<kw name="Enter User Name">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameTextBox}</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:54.591" level="INFO">Typing text 'testmeh' into text field 'id=mailbox__login'</msg>
+<status status="PASS" endtime="20170921 13:57:54.940" starttime="20170921 13:57:54.590"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:54.940" starttime="20170921 13:57:54.590"></status>
+</kw>
+<kw name="Enter Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordTextBox}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:54.940" level="INFO">Typing text 'Finaltest1!' into text field 'id=mailbox__password'</msg>
+<status status="PASS" endtime="20170921 13:57:55.137" starttime="20170921 13:57:54.940"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:55.138" starttime="20170921 13:57:54.940"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginButton}</arg>
+</arguments>
+<msg timestamp="20170921 13:57:55.139" level="INFO">Clicking button 'id=mailbox__auth__button'.</msg>
+<status status="PASS" endtime="20170921 13:57:55.254" starttime="20170921 13:57:55.138"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:57:55.254" starttime="20170921 13:57:55.138"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20170921 13:58:00.255" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170921 13:58:00.255" starttime="20170921 13:57:55.254"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170921 13:58:00.340" starttime="20170921 13:58:00.256"></status>
+</kw>
+<status status="PASS" endtime="20170921 13:58:00.341" critical="yes" starttime="20170921 13:57:50.932"></status>
+</test>
+<status status="PASS" endtime="20170921 13:58:00.341" starttime="20170921 13:57:02.922"></status>
+</suite>
+<status status="PASS" endtime="20170921 13:58:00.343" starttime="20170921 13:57:02.910"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="4">Test</stat>
+<stat fail="0" id="s1-s1" name="Test2" pass="4">Test.Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
